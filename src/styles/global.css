@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-slate-800 overflow-clip;
+}
+
+.nav--text {
+  @apply font-barlowCondensed text-base text-white tracking-[2.7px];
+}
+
+.heading--1 {
+  @apply text-[150px] font-bellefair text-white;
+}
+
+.heading--4 {
+  @apply font-bellefair text-[32px];
+}
+
+.heading--5 {
+  @apply font-barlowCondensed text-[24px] text-palette-paragraph tracking-[4.75px];
+}
+
+.body--text {
+  @apply font-barlow text-lg leading-8;
+}

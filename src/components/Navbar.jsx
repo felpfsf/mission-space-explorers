@@ -48,19 +48,26 @@ const Navbar = () => {
           <img src="../src/assets/shared/icon-hamburger.svg" alt="" />
         }
       </div>
-      <nav className={click ? ('fixed top-0 right-0 h-screen w-[70%] pl-8 pt-28 bg-white/25 backdrop-blur-lg ease-in duration-300') : ('fixed right-[-100%] pl-8 pt-28')}>
+      <nav
+        className=
+        {click ?
+          ('fixed top-0 right-0 h-screen w-[70%] pl-8 pt-28 bg-white/25 backdrop-blur-lg ease-in duration-300')
+          :
+          ('fixed top-0 right-[-100%] h-screen w-[70%] pl-8 pt-28 bg-white/25 backdrop-blur-[80px] ease-in duration-300')
+        }
+      >
         <ul className='uppercase'>
           <li className='nav--text text-base pb-8'>
-            <Link to='/'><strong className='mr-[11px]'>00</strong>Home</Link>
+            <Link onClick={() => setClick(false)} to='/'><strong className='mr-[11px]'>00</strong>Home</Link>
           </li>
           <li className='nav--text text-base pb-8'>
-            <Link to='/destination'><strong className='mr-[11px]'>01</strong>Destination</Link>
+            <Link onClick={() => setClick(false)} to='/destination'><strong className='mr-[11px]'>01</strong>Destination</Link>
           </li>
           <li className='nav--text text-base pb-8'>
-            <Link to='/crew'><strong className='mr-[11px]'>02</strong>Crew</Link>
+            <Link onClick={() => setClick(false)} to='/crew'><strong className='mr-[11px]'>02</strong>Crew</Link>
           </li>
           <li className='nav--text text-base pb-8'>
-            <Link to='/technology'><strong className='mr-[11px]'>03</strong>Technology</Link>
+            <Link onClick={() => setClick(false)} to='/technology'><strong className='mr-[11px]'>03</strong>Technology</Link>
           </li>
         </ul>
       </nav>

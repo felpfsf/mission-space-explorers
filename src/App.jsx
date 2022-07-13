@@ -1,4 +1,5 @@
 import { Link, Route, Routes } from "react-router-dom"
+import Navbar from "./components/Navbar"
 import Crew from "./pages/Crew"
 import Destination from "./pages/Destination"
 import Home from "./pages/Home"
@@ -8,12 +9,14 @@ function App() {
 
   return (
     <>
-      <div>
+
+      {/* <div>
         <Link to='/'>Home</Link>
         <Link to='/destination'>Destination</Link>
         <Link to='/crew'>Crew</Link>
         <Link to='/technology'>Technology</Link>
-      </div>
+      </div> */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/destination" element={<Destination />} />

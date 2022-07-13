@@ -1,38 +1,71 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-const Navbar = () => {
-  return (
-    <div className='w-full mt-10 z-[100] absolute pt-10 flex items-center justify-between'>
-      <img className='ml-[55px]' src="../src/assets/shared/logo.svg" alt="" />
 
-      <nav className='w-[832px] bg-white/25 backdrop-blur-sm py-10 flex justify-center'>
-        <ul className='flex gap-[50px]'>
-          <li className='nav--text'>
-            <Link to='/' className='hover:border-b-2 pb-[39px] hover:border-white/25 active:border-white transition-transform'>
-              <strong className='mr-[11px]'>00</strong>
+const Navbar = () => {
+  const [click, setClick] = useState(false)
+
+  const handleClick = () => { setClick(!click) }
+
+  return (
+    <header className='w-full z-10 p-6 sm:p-0 xl:pt-10 absolute flex items-center justify-between'>
+      <img className='sm:ml-10' src="../src/assets/shared/logo.svg" alt="" />
+
+      <nav className='hidden sm:w-[450px] xl:w-[832px] py-10 px-12 bg-white/[0.04] backdrop-blur-[80px] sm:flex xl:justify-center'>
+
+        <ul className='uppercase flex sm:gap-[37px] xl:gap-[50px]'>
+
+          <li className='nav--text text-sm xl:nav--text xl:text-base'>
+            <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/'>
+              <strong className='sm:hidden xl:inline-flex mr-3'>00</strong>
               Home
             </Link>
           </li>
-          <li className='nav--text'>
-            <Link to='/destination' className='hover:border-b-2 pb-[39px] hover:border-white/25 active:border-white transition-transform'>
-              <strong className='mr-[11px]'>01</strong>
+          <li className='nav--text text-sm xl:nav--text xl:text-base'>
+            <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/destination'>
+              <strong className='sm:hidden xl:inline-flex mr-3'>01</strong>
               Destination
             </Link>
           </li>
-          <li className='nav--text'>
-            <Link to='/crew' className='hover:border-b-2 pb-[39px] hover:border-white/25 active:border-white transition-transform'>
-              <strong className='mr-[11px]'>02</strong>
+          <li className='nav--text text-sm xl:nav--text xl:text-base'>
+            <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/crew'>
+              <strong className='sm:hidden xl:inline-flex mr-3'>02</strong>
               Crew
             </Link>
           </li>
-          <li className='nav--text'>
-            <Link to='/technology' className='hover:border-b-2 pb-[39px] hover:border-white/25 active:border-white transition-transform'>
-              <strong className='mr-[11px]'>03</strong>
+          <li className='nav--text text-sm xl:nav--text xl:text-base'>
+            <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/technology'>
+              <strong className='sm:hidden xl:inline-flex mr-3'>03</strong>
               Technology
             </Link>
           </li>
         </ul>
       </nav>
-    </div>
+
+      <div onClick={handleClick} className="sm:hidden z-10 cursor-pointer">
+        {click ?
+          <img src="../src/assets/shared/icon-close.svg" alt="" />
+          :
+          <img src="../src/assets/shared/icon-hamburger.svg" alt="" />
+        }
+      </div>
+      <nav className={click ? ('fixed top-0 right-0 h-screen w-[70%] pl-8 pt-28 bg-white/25 backdrop-blur-lg ease-in duration-300') : ('fixed right-[-100%] pl-8 pt-28')}>
+        <ul className='uppercase'>
+          <li className='nav--text text-base pb-8'>
+            <Link to='/'><strong className='mr-[11px]'>00</strong>Home</Link>
+          </li>
+          <li className='nav--text text-base pb-8'>
+            <Link to='/destination'><strong className='mr-[11px]'>01</strong>Destination</Link>
+          </li>
+          <li className='nav--text text-base pb-8'>
+            <Link to='/crew'><strong className='mr-[11px]'>02</strong>Crew</Link>
+          </li>
+          <li className='nav--text text-base pb-8'>
+            <Link to='/technology'><strong className='mr-[11px]'>03</strong>Technology</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
   )
 }
 

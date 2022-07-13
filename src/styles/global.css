@@ -4,10 +4,12 @@
 
 body {
   @apply bg-slate-800 overflow-clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .nav--text {
-  @apply font-barlowCondensed text-base text-white tracking-[2.7px];
+  @apply font-barlowCondensed text-white tracking-[2.7px];
 }
 
 .heading--1 {

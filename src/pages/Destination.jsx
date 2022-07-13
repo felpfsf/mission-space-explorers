@@ -2,7 +2,7 @@ import React from 'react'
 
 const Destination = () => {
   return (
-    <div>Destination</div>
+    <div className='h-screen bg-[url("../src/assets/destination/background-destination-desktop.jpg")]'>Destination</div>
   )
 }
 

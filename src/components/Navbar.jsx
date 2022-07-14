@@ -48,9 +48,9 @@ const Navbar = () => {
 
       <div onClick={handleClick} className="sm:hidden z-10 cursor-pointer">
         {click ?
-          <img src={closeMenu} alt="" />
+          <img src="/assets/shared/icon-close.svg" alt="" />
           :
-          <img src={openMenu} alt="" />
+          <img src="/assets/shared/icon-hamburger.svg" alt="" />
         }
       </div>
       <nav

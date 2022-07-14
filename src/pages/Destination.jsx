@@ -3,7 +3,7 @@ import data from '../data/data.json'
 
 const Destination = () => {
   return (
-    <div className='w-full h-screen bg-bgDestMobile sm:bg-bgDestTablet xl:bg-bgDestDesktop bg-cover bg-center overflow-auto xl:overflow-hidden'>
+    <div className='w-full h-screen bg-[url(url(/assets/destination/background-destination-mobile.jpg))] sm:bg-[url(url(/assets/destination/background-destination-mobile.jpg))] xl:bg-[url(url(/assets/destination/background-destination-mobile.jpg))] bg-cover bg-center overflow-auto xl:overflow-hidden'>
 
       <div className='w-[327px] mx-auto mt-20 flex flex-col items-center'>
 

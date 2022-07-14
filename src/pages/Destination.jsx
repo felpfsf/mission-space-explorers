@@ -11,7 +11,7 @@ const Destination = () => {
           <strong className='text-white/25 mr-[18px]'>01</strong>
           Pick your destination
         </h5>
-        <img src={"../src" + data.destinations[0].images.webp} alt="" />
+        <img src={data.destinations[0].images.png} alt="" />
         <div className='flex flex-col items-center justify-center'>
           {/* <div className='text-white py-8 flex gap-[26px]'>
             {data.destinations.map((destination, index) => {

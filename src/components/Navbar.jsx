@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/shared/logo.svg'
-import openMenu from '../assets/shared/icon-hamburger.svg'
-import closeMenu from '../assets/shared/icon-close.svg'
+import logo from '/assets/shared/logo.svg'
+import openMenu from '/assets/shared/icon-hamburger.svg'
+import closeMenu from '/assets/shared/icon-close.svg'
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header className='w-full z-10 p-6 sm:p-0 xl:pt-10 absolute flex items-center justify-between'>
       <Link to='/'>
-        <img className='sm:ml-10' src={logo} alt="" />
+        <img className='sm:ml-10' src="/assets/shared/logo.svg" alt="" />
       </Link>
 
       <nav className='hidden sm:w-[450px] xl:w-[832px] py-10 px-12 bg-white/[0.04] backdrop-blur-[80px] sm:flex xl:justify-center'>

@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/shared/logo.svg'
+import openMenu from '../assets/shared/icon-hamburger-svg'
+import closeMenu from '../assets/shared/icon-close.svg'
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
@@ -46,9 +48,9 @@ const Navbar = () => {
 
       <div onClick={handleClick} className="sm:hidden z-10 cursor-pointer">
         {click ?
-          <img src="../src/assets/shared/icon-close.svg" alt="" />
+          <img src={closeMenu} alt="" />
           :
-          <img src="../src/assets/shared/icon-hamburger.svg" alt="" />
+          <img src={openMenu} alt="" />
         }
       </div>
       <nav

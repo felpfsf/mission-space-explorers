@@ -15,9 +15,9 @@ const Home = () => {
             Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
           </p>
         </div>
-        <div className='group w-[150px] h-[150px] sm:w-60 sm:h-60 xl:w-[272px] xl:h-[272px] z-10 mt-12 sm:mt-[150px] md:mt-32 bg-white rounded-full flex items-center justify-center cursor-pointer'>
+        <div className='group w-[150px] h-[150px] sm:w-60 sm:h-60 xl:w-[272px] xl:h-[272px] mt-12 sm:mt-[150px] md:mt-32 bg-white rounded-full flex items-center justify-center cursor-pointer'>
           <p className='buttonText'>Explore</p>
-          <div className='w-[150px] h-[150px] sm:w-60 sm:h-60 xl:w-[272px] xl:h-[272px] absolute rounded-full group-hover:scale-[1.45] group-hover:bg-white opacity-[0.1] -z-[100]'></div>
+          <div className='w-[150px] h-[150px] sm:w-60 sm:h-60 xl:w-[272px] xl:h-[272px] absolute rounded-full group-hover:scale-[1.45] group-hover:bg-white opacity-[0.1] z-10'></div>
         </div>
       </div>
     </div>

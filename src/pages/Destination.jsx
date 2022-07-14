@@ -13,13 +13,19 @@ const Destination = () => {
         </h5>
         <img src={"../src" + data.destinations[0].images.webp} alt="" />
         <div className='flex flex-col items-center justify-center'>
-          <div className='text-white py-8 flex gap-[26px]'>
+          {/* <div className='text-white py-8 flex gap-[26px]'>
             {data.destinations.map((destination, index) => {
               return (
                 <p className='heading--5 uppercase' key={index}>{destination.name}</p>
               )
             })}
-          </div>
+          </div> */}
+
+          <ul className='heading--5 uppercase my-8 flex flex-row gap-6'>
+            {data.destinations.map((destination, index) =>
+              <li className='hover:text-white hover:underline underline-offset-8 cursor-pointer' key={index}>{destination.name}</li>
+            )}
+          </ul>
           <h1 className='heading--1 uppercase'>{data.destinations[0].name}</h1>
           <p className='paragraph text-center'>{data.destinations[0].description}</p>
 

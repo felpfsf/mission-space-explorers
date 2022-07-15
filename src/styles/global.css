@@ -9,7 +9,7 @@ body {
 }
 
 .nav--text {
-  @apply font-barlowCondensed text-navDynamic text-white tracking-[2.7px];
+  @apply font-barlowCondensed text-base text-white tracking-[2.7px];
 }
 
 .heading--1 {
@@ -38,4 +38,48 @@ body {
 
 .paragraph {
   @apply font-barlow text-paragraphDynamic leading-8 text-palette-paragraph;
+}
+
+.navText {
+  @apply font-barlowCondensed text-base text-white;
+}
+
+.mainTitle {
+  @apply font-bellefair text-mainTitleSize text-white;
+}
+
+.pagesTitle {
+  @apply font-barlowCondensed text-pagesTitleSize tracking-[4.75px];
+}
+
+.destName {
+  @apply font-bellefair text-destNameSize text-white;
+}
+
+.destMenu {
+  @apply font-barlowCondensed text-destMenuSize text-palette-paragraph;
+}
+
+.destTravel {
+  @apply font-barlowCondensed text-sm tracking-[2.35px] text-palette-paragraph;
+}
+
+.destTravelContent {
+  @apply font-bellefair text-[28px];
+}
+
+.crewTechName {
+  @apply font-bellefair text-crewTitleSize text-white;
+}
+
+.crewRole {
+  @apply font-bellefair text-crewRoleSize text-white text-opacity-5;
+}
+
+.techTitle {
+  @apply font-barlowCondensed text-techTitleSize text-palette-accent;
+}
+
+.paragraphText {
+  @apply font-barlow text-paragraphSize leading-8 text-palette-paragraph;
 }

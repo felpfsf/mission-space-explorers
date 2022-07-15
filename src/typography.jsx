@@ -62,4 +62,30 @@
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia veniam voluptatibus vitae in, iste molestiae quaerat alias asperiores error! Ex numquam quas molestias unde repellat praesentium natus. Velit laudantium cum porro dignissimos dolore est facere inventore? Officia possimus adipisci ab vero magnam placeat consequuntur, alias iste fugit animi voluptas suscipit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit necessitatibus odit ipsam eligendi perferendis ad culpa dolores animi placeat temporibus, eveniet sunt quaerat praesentium maiores error fugit repellendus nisi! Illo!
   </p>
 
+
 </div>
+
+
+// utilities classes
+
+// navText = Barlow font-size 16px crl white
+
+// mainTitle = Bellefair font-size min( 100 px) max( 150 px) clr white
+
+// pagesTitle = Barlow Condensed font-size min( 16 px) max( 28 px)  clr white
+
+// destName = Bellefair font-size min( 80 px) max( 100 px) clr white
+
+// destMenu = Barlow Condensed font-sze min( 14 px) max( 16 px) clr paragraph hover:white
+
+// destTravel = Barlow Condensed font-size 14px tracking-[2.35px] clr accent
+
+// destTravelContent = Bellefair font-size 28px
+
+// crewName/techName = Bellefair font-size min( 24 px) max( 56 px) clr white
+
+// crewRole = Bellefair font-size min( 16 px) max( 32 px) crl white/50
+
+// techTitle = Barlow Condensed font-size min( 14 px) max( 16 px) crl accent
+
+// bodyText = Barlow font-size min( 15 px) max( 18 px) clr paragraph

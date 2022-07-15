@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '/assets/shared/logo.svg'
-import openMenu from '/assets/shared/icon-hamburger.svg'
-import closeMenu from '/assets/shared/icon-close.svg'
+
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
@@ -19,25 +17,25 @@ const Navbar = () => {
 
         <ul className='uppercase flex sm:gap-[37px] xl:gap-[50px]'>
 
-          <li className='nav--text text-sm xl:nav--text xl:text-base'>
+          <li className='navText'>
             <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/'>
               <strong className='sm:hidden xl:inline-flex mr-3'>00</strong>
               Home
             </Link>
           </li>
-          <li className='nav--text text-sm xl:nav--text xl:text-base'>
+          <li className='navText'>
             <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/destination'>
               <strong className='sm:hidden xl:inline-flex mr-3'>01</strong>
               Destination
             </Link>
           </li>
-          <li className='nav--text text-sm xl:nav--text xl:text-base'>
+          <li className='navText'>
             <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/crew'>
               <strong className='sm:hidden xl:inline-flex mr-3'>02</strong>
               Crew
             </Link>
           </li>
-          <li className='nav--text text-sm xl:nav--text xl:text-base'>
+          <li className='navText'>
             <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/technology'>
               <strong className='sm:hidden xl:inline-flex mr-3'>03</strong>
               Technology
@@ -62,16 +60,16 @@ const Navbar = () => {
         }
       >
         <ul className='uppercase'>
-          <li className='nav--text text-base pb-8'>
+          <li className='navText pb-8'>
             <Link onClick={() => setClick(false)} to='/'><strong className='mr-[11px]'>00</strong>Home</Link>
           </li>
-          <li className='nav--text text-base pb-8'>
+          <li className='navText pb-8'>
             <Link onClick={() => setClick(false)} to='/destination'><strong className='mr-[11px]'>01</strong>Destination</Link>
           </li>
-          <li className='nav--text text-base pb-8'>
+          <li className='navText pb-8'>
             <Link onClick={() => setClick(false)} to='/crew'><strong className='mr-[11px]'>02</strong>Crew</Link>
           </li>
-          <li className='nav--text text-base pb-8'>
+          <li className='navText pb-8'>
             <Link onClick={() => setClick(false)} to='/technology'><strong className='mr-[11px]'>03</strong>Technology</Link>
           </li>
         </ul>

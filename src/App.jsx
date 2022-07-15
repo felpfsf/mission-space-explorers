@@ -9,13 +9,6 @@ function App() {
 
   return (
     <>
-
-      {/* <div>
-        <Link to='/'>Home</Link>
-        <Link to='/destination'>Destination</Link>
-        <Link to='/crew'>Crew</Link>
-        <Link to='/technology'>Technology</Link>
-      </div> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

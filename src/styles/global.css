@@ -53,7 +53,7 @@ body {
 }
 
 .destTravelContent {
-  @apply font-bellefair text-[28px];
+  @apply font-bellefair text-[28px] text-white;
 }
 
 .crewTechName {

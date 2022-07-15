@@ -4,11 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        titleDynamic: 'clamp(5rem, 3.5417rem + 6.4815vw, 9.375rem)',
-        subTitleDynamic: 'clamp(1rem, 0.8333rem + 0.7407vw, 1.75rem)',
-        paragraphDynamic: 'clamp(0.938rem, 0.8757rem + 0.2770vw, 1.125rem)',
-        btnTextDynamic: 'clamp(1.25rem, 1.0000rem + 1.1111vw, 2rem)',
         // Font Dynamic Size
+        btnTextDynamic: 'clamp(1.25rem, 1.0000rem + 1.1111vw, 2rem)',
         mainTitleSize: 'clamp(6.25rem, 5.2083rem + 4.6296vw, 9.375rem)',
         pagesTitleSize: 'clamp(1rem, 0.9583rem + 0.1852vw, 1.125rem)',
         destNameSize: 'clamp(5rem, 4.5833rem + 1.8519vw, 6.25rem)',

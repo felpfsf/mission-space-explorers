@@ -8,36 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.nav--text {
-  @apply font-barlowCondensed text-base text-white tracking-[2.7px];
-}
-
-.heading--1 {
-  @apply font-bellefair text-titleDynamic text-white;
-}
-
-.heading--4 {
-  @apply font-bellefair;
-}
-
-.heading--5 {
-  @apply font-barlowCondensed text-subTitleDynamic text-palette-paragraph tracking-[4.75px];
-}
-
-.sub--heading--1 {
-  @apply font-bellefair text-[28px];
-}
-
-.sub--heading--2 {
-  @apply font-barlowCondensed text-sm tracking-[2.35px];
-}
-
 .buttonText {
   @apply font-bellefair text-btnTextDynamic uppercase text-palette-accent;
-}
-
-.paragraph {
-  @apply font-barlow text-paragraphDynamic leading-8 text-palette-paragraph;
 }
 
 .navText {

@@ -5,9 +5,7 @@ import data from '../data/data.json'
 
 const Destination = () => {
   const [content, setContent] = useState(0)
-  const contentTest = (index) => {
-    console.log(index);
-  }
+
   return (
     <div className='w-full h-screen destinationBackgrounds overflow-auto xl:overflow-hidden'>
       <div className='mt-[88px] md:mt-[136px] xl:mt-[212px] grid justify-items-center xl:grid-cols-2 xl:auto-rows-auto'>

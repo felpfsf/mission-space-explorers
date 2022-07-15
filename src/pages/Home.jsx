@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div className='w-full h-screen bg-[url("/assets/home/background-home-mobile.jpg")] sm:bg-[url("/assets/home/background-home-tablet.jpg") xl:bg-[url("/assets/home/background-home-desktop.jpg")] bg-cover bg-center'>
+    <div className='w-full h-screen homeBackgrounds'>
 
       <div className='xl:h-full xl:pb-32 pt-28 sm:pt-40  flex flex-col items-center justify-center xl:grid xl:grid-cols-2 xl:justify-items-center xl:items-end xl:content-end'>
 

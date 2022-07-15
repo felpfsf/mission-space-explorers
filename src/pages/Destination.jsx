@@ -2,7 +2,7 @@ import data from '../data/data.json'
 
 const Destination = () => {
   return (
-    <div className='w-full h-screen bg-[url("/assets/destination/background-destination-mobile.jpg")] sm:bg-[url("/assets/destination/background-destination-tablet.jpg")] xl:bg-[url("/assets/destination/background-destination-desktop.jpg")] bg-cover bg-center overflow-auto xl:overflow-hidden flex flex-col items-center justify-center'>
+    <div className='w-full h-screen destinationBackgrounds overflow-auto xl:overflow-hidden flex flex-col items-center justify-center'>
       <h5 className='pagesTitle text-white uppercase'>
         <strong className='mr-[11px]'>01</strong>
         Pick your destination

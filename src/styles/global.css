@@ -8,6 +8,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.homeBackgrounds {
+  @apply bg-[url("/assets/home/background-home-mobile.jpg")] sm:bg-[url("/assets/home/background-home-tablet.jpg")] xl:bg-[url("/assets/home/background-home-desktop.jpg")] bg-cover bg-center;
+}
+
+.destinationBackgrounds {
+  @apply bg-[url("/assets/destination/background-destination-mobile.jpg")] sm:bg-[url("/assets/destination/background-destination-tablet.jpg")] xl:bg-[url("/assets/destination/background-destination-desktop.jpg")] bg-cover bg-center;
+}
+
+.crewBackgrounds {
+  @apply bg-[url("/assets/crew/background-crew-mobile.jpg")] sm:bg-[url("/assets/crew/background-crew-tablet.jpg")] xl:bg-[url("/assets/crew/background-crew-desktop.jpg")] bg-cover bg-center;
+}
+
+.techBackgrounds {
+  @apply bg-[url("/assets/technology/background-technology-mobile.jpg")] sm:bg-[url("/assets/technology/background-technology-tablet.jpg")] xl:bg-[url("/assets/technology/background-technology-desktop.jpg")] bg-cover bg-center;
+}
+
 .buttonText {
   @apply font-bellefair text-btnTextDynamic uppercase text-palette-accent;
 }

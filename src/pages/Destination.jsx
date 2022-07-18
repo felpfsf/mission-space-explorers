@@ -8,13 +8,13 @@ const Destination = () => {
 
   return (
     <div className='w-full h-screen destinationBackgrounds overflow-auto xl:overflow-hidden'>
-      <div className='mt-[88px] md:mt-[136px] xl:mt-[212px] grid justify-items-center xl:grid-cols-2 xl:auto-rows-auto'>
-        <h5 className='pagesTitle text-white uppercase mb-8 xl:mb-16 md:relative right-48 xl:row-start-1'>
+      <div className='mt-[88px] md:mt-[136px] xl:mt-[180px] 2xl:mt-[212px] grid justify-items-center xl:grid-cols-2 xl:auto-rows-auto'>
+        <h5 className='pagesTitle text-white uppercase mb-8 xl:mb-16 md:relative xl:right-24 xl:row-start-1'>
           <strong className='mr-[11px] opacity-25'>01</strong>
           Pick your destination
         </h5>
         <Planets index={content} />
-        <div className='w-[327px] md:w-[575px] xl:w-[445px] mt-7 flex flex-col xl:items-start'>
+        <div className='w-[327px] md:w-[575px] xl:w-[445px] 2xl:mt-7 xl:-mt-14 flex flex-col xl:items-start'>
           <ul className='destMenu uppercase flex gap-[26px] justify-center'>
             {data.destinations.map((destination, index) =>
               <li className='hover:text-white hover:underline underline-offset-8 cursor-pointer' key={index} onClick={() => setContent(index)}>{destination.name}</li>

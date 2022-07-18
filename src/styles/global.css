@@ -25,7 +25,7 @@ body {
 }
 
 .buttonText {
-  @apply font-bellefair text-btnTextDynamic uppercase text-palette-accent;
+  @apply font-bellefair text-btnTextDynamic uppercase;
 }
 
 .navText {

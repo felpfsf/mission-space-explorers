@@ -10,7 +10,7 @@ const Destination = () => {
     <div className='w-full h-screen destinationBackgrounds overflow-auto xl:overflow-hidden'>
       <div className='mt-[88px] md:mt-[136px] xl:mt-[212px] grid justify-items-center xl:grid-cols-2 xl:auto-rows-auto'>
         <h5 className='pagesTitle text-white uppercase mb-8 xl:mb-16 md:relative right-48 xl:row-start-1'>
-          <strong className='mr-[11px]'>01</strong>
+          <strong className='mr-[11px] opacity-25'>01</strong>
           Pick your destination
         </h5>
         <Planets index={content} />

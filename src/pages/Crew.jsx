@@ -6,7 +6,7 @@ import data from '../data/data.json'
 const Crew = () => {
   const [content, setContent] = useState(0)
   return (
-    <div className='w-full h-screen crewBackgrounds overflow-auto'>
+    <div className='w-full h-screen crewBackgrounds overflow-auto xl:overflow-hidden'>
       {/* <div className='absolute top-0 left-0 w-full h-screen bg-black/10'></div> */}
       <div className='w-[327px] md:w-[458px] xl:w-full h-[85%] mt-[88px] md:mt-[136px] mx-auto grid justify-items-center xl:grid-cols-2 xl:grid-rows-2'>
         {/* page title */}

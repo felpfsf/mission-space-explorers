@@ -8,9 +8,9 @@ const Crew = () => {
   return (
     <div className='w-full h-screen crewBackgrounds overflow-auto'>
       {/* <div className='absolute top-0 left-0 w-full h-screen bg-black/10'></div> */}
-      <div className='w-[327px] md:w-[458px] xl:w-full mt-[88px] md:mt-[136px] xl:mt-[150px] mx-auto grid justify-items-center xl:grid-cols-2 xl:auto-rows-auto'>
+      <div className='w-[327px] md:w-[458px] xl:w-full h-[85%] mt-[88px] md:mt-[136px] mx-auto grid justify-items-center xl:grid-cols-2 xl:grid-rows-2'>
         {/* page title */}
-        <h5 className='pagesTitle text-white uppercase mb-8 md:-order-1 xl:order-none xl:place-self-center'>
+        <h5 className='pagesTitle text-white uppercase mb-8 md:-order-1 xl:order-none xl:place-self-center row-end-1 col-start-1 col-end-1'>
           <strong className='mr-[11px] opacity-25'>02</strong>
           Meet your crew
         </h5>
@@ -18,7 +18,7 @@ const Crew = () => {
         <CrewPics index={content} />
         {/* separator mobile */}
         <div className='md:hidden w-full h-[1px] bg-[#64687c]' ></div>
-        <div className='xl:w-[488px] my-8 flex flex-col md:flex-col-reverse items-center md:-order-1 xl:order-none xl:items-start xl:place-self-center'>
+        <div className='xl:w-[488px] my-8 flex flex-col md:flex-col-reverse items-center md:-order-1 xl:order-none xl:items-start xl:place-self-center row-start-1 row-end-3'>
           {/* buttons */}
           <ul className='mb-8 flex items-center gap-4'>
             {data.crew.map((crewMember, index) =>

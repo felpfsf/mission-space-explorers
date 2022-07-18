@@ -18,7 +18,7 @@ const Crew = () => {
         <CrewPics index={content} />
         {/* separator mobile */}
         <div className='md:hidden w-full h-[1px] bg-[#64687c]' ></div>
-        <div className='xl:w-[488px] my-8 flex flex-col md:flex-col-reverse items-center md:-order-1 xl:order-none xl:items-start xl:place-self-center xl:row-start-1 xl:row-end-3'>
+        <div className='xl:w-[614px] my-8 flex flex-col md:flex-col-reverse items-center md:-order-1 xl:order-none xl:items-start xl:place-self-center xl:row-start-1 xl:row-end-3'>
           {/* buttons */}
           <ul className='mb-8 flex items-center gap-4'>
             {data.crew.map((crewMember, index) =>

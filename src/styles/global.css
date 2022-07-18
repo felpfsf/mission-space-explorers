@@ -61,7 +61,7 @@ body {
 }
 
 .crewRole {
-  @apply font-bellefair text-crewRoleSize text-white text-opacity-5;
+  @apply font-bellefair text-crewRoleSize text-white text-opacity-50;
 }
 
 .techTitle {

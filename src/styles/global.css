@@ -65,7 +65,7 @@ body {
 }
 
 .techTitle {
-  @apply font-barlowCondensed text-techTitleSize text-palette-accent;
+  @apply font-barlowCondensed text-techTitleSize text-palette-paragraph;
 }
 
 .paragraphText {

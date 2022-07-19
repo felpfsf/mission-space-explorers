@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Technologies from '../components/Technologies'
+import TechnologiesImg from '../components/TechnologiesImg'
 import data from '../data/data.json'
 
 const Technology = () => {
@@ -12,22 +14,24 @@ const Technology = () => {
           Space launch 101
         </h5>
         {/* image */}
-        <img className='xl:hidden place-self-stretch' src={data.technology[0].images.landscape} alt="" />
-        <img className='hidden xl:block xl:row-start-1 xl:row-span-2 xl:col-start-3 xl:place-self-end' src={data.technology[0].images.portrait} alt="" />
+        {/* <img className='xl:hidden place-self-stretch' src={data.technology[0].images.landscape} alt="" />
+        <img className='hidden xl:block xl:row-start-1 xl:row-span-2 xl:col-start-3 xl:place-self-end' src={data.technology[0].images.portrait} alt="" /> */}
+        <TechnologiesImg index={content} />
         {/* navigation */}
         <div className='flex flex-row xl:flex-col gap-4 xl:row-start-2 place-self-center'>
           {data.technology.map((tech, index) =>
-            <div className='w-10 h-10 xl:w-20 xl:h-20 hover:bg-white border border-white text-white hover:text-palette-accent rounded-full flex items-center justify-center  cursor-pointer' key={index} onClick={() => setContent(console.log(index))}>
+            <div className='w-10 h-10 xl:w-20 xl:h-20 hover:bg-white border border-white text-white hover:text-palette-accent rounded-full flex items-center justify-center  cursor-pointer' key={index} onClick={() => setContent(index)}>
               <span className='buttonText'>{index + 1}</span>
             </div>
           )}
         </div>
         {/* content */}
-        <div className='w-[327px] md:w-[458px] xl:w-[470px] flex flex-col text-center xl:text-left place-self-center'>
+        {/* <div className='w-[327px] md:w-[458px] xl:w-[470px] flex flex-col text-center xl:text-left place-self-center'>
           <h5 className='techTitle uppercase'>The Termilogy</h5>
           <h1 className='crewTechName uppercase'>{data.technology[0].name}</h1>
           <p className='paragraphText text-center xl:text-left'>{data.technology[0].description}</p>
-        </div>
+        </div> */}
+        <Technologies index={content} />
       </div>
     </div>
   )

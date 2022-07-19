@@ -6,16 +6,14 @@ import data from '../data/data.json'
 const Technology = () => {
   const [content, setContent] = useState(0)
   return (
-    <div className='w-full h-screen techBackgrounds overflow-auto'>
-      <div className='w-full mt-[88px] md:mt-[136px] xl:mt-[212px] grid gap-8 xl:auto-cols-auto xl:auto-rows-auto'>
+    <div className='w-full h-screen techBackgrounds overflow-auto xl:overflow-hidden'>
+      <div className='w-full mt-[88px] md:mt-[136px] xl:mt-[175px] 2xl:mt-[212px] grid gap-8 xl:auto-cols-auto xl:auto-rows-auto'>
 
         <h5 className='pagesTitle text-white uppercase mb-8 xl:row-start-1 xl:row-end-1 xl:col-start-1 xl:col-span-2 xl:ml-20 2xl:ml-48 place-self-center xl:place-self-start'>
           <strong className='mr-[11px] opacity-25'>03</strong>
           Space launch 101
         </h5>
         {/* image */}
-        {/* <img className='xl:hidden place-self-stretch' src={data.technology[0].images.landscape} alt="" />
-        <img className='hidden xl:block xl:row-start-1 xl:row-span-2 xl:col-start-3 xl:place-self-end' src={data.technology[0].images.portrait} alt="" /> */}
         <TechnologiesImg index={content} />
         {/* navigation */}
         <div className='flex flex-row xl:flex-col gap-4 xl:row-start-2 place-self-center'>
@@ -26,11 +24,6 @@ const Technology = () => {
           )}
         </div>
         {/* content */}
-        {/* <div className='w-[327px] md:w-[458px] xl:w-[470px] flex flex-col text-center xl:text-left place-self-center'>
-          <h5 className='techTitle uppercase'>The Termilogy</h5>
-          <h1 className='crewTechName uppercase'>{data.technology[0].name}</h1>
-          <p className='paragraphText text-center xl:text-left'>{data.technology[0].description}</p>
-        </div> */}
         <Technologies index={content} />
       </div>
     </div>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -18,28 +18,28 @@ const Navbar = () => {
         <ul className='uppercase flex sm:gap-[37px] xl:gap-[50px]'>
 
           <li className='navText'>
-            <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/'>
+            <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-[39px] border-white' : 'hover:border-b-2 pb-[39px] hover:border-white/25'} to='/'>
               <strong className='sm:hidden xl:inline-flex mr-3'>00</strong>
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className='navText'>
-            <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/destination'>
+            <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-[39px] border-white' : 'hover:border-b-2 pb-[39px] hover:border-white/25'} to='/destination'>
               <strong className='sm:hidden xl:inline-flex mr-3'>01</strong>
               Destination
-            </Link>
+            </NavLink>
           </li>
           <li className='navText'>
-            <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/crew'>
+            <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-[39px] border-white' : 'hover:border-b-2 pb-[39px] hover:border-white/25'} to='/crew'>
               <strong className='sm:hidden xl:inline-flex mr-3'>02</strong>
               Crew
-            </Link>
+            </NavLink>
           </li>
           <li className='navText'>
-            <Link className='hover:border-b-2 pb-[39px] hover:border-white/25' to='/technology'>
+            <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-[39px] border-white' : 'hover:border-b-2 pb-[39px] hover:border-white/25'} to='/technology'>
               <strong className='sm:hidden xl:inline-flex mr-3'>03</strong>
               Technology
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

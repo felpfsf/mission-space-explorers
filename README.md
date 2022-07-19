@@ -10,7 +10,7 @@
 
 # Space Tourism
 
-Personal project inspired on the The Frontend Mentor's challenge Space Tourism. It's about a fiction company that plans missions to outher planets, you check destinations informartion, crew members and some of the technology used to travel.
+Personal project inspired on the The Frontend Mentor's challenge Space Tourism. It's about a fiction company that plans missions to outher planets, you can check destinations informartion, crew members and some of the technology used to travel.
 
 ---
 
